@@ -17,6 +17,7 @@ Ce projet propose un **système multimodal basé sur l’intelligence artificiel
 
 L’objectif est d’**évaluer l’équité**, d’identifier les biais et de comparer l’efficacité de chaque modalité.
 
+Ce projet contribue à rendre le recrutement plus inclusif et éthique en utilisant l'IA pour auditer les algorithmes d'entretien.
 ---
 
 ## 🏗️ Architecture du Système
@@ -118,21 +119,10 @@ Contient des attributs faciaux avec des scores de confiance.
 
 ---
 
-## 🧪 Technologies Utilisées
+## ⚙️ Installation
 
-**Base :**  
-- Python, Scikit-learn  
-
-**Traitement du Langage Naturel (NLP) :**  
-- Whisper, HuggingFace Transformers  
-
-**Traitement Audio :**  
-- Librosa  
-
-**Vision par Ordinateur :**  
-- OpenCV, MTCNN, DeepFace  
-
----
+1. Clone the repository: `git clone https://github.com/HajarBoutayeb/video-interview-bias-detection.git`
+2. Install dependencies: `pip install -r requirements.txt`
 
 ## 🏁 Principaux Résultats
 
