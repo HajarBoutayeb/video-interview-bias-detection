@@ -81,8 +81,8 @@ L’analyse audio permet de détecter des variations prosodiques subtiles associ
 ### 🔹 Résultats – Modalité Image / Vidéo
 Les caractéristiques visuelles mettent en évidence des **disparités démographiques** entre différents groupes.
 
-![Résultats Image](assets/image/image_results.png)
-
+![Résultats Image](assets/image/image_results_genre.png)
+![Résultats Image](assets/image/image_results_race.png)
 ---
 
 ## 📂 Exemples de Données Utilisées
@@ -97,14 +97,14 @@ Contient des phrases d’entretiens annotées selon le type de biais, le niveau 
 ### 🔊 Jeu de Données Audio
 Inclut des caractéristiques acoustiques extraites pour chaque segment audio.
 
-![Dataset Audio](assets/audio/audio_dataset_sample.png)
+![Dataset Audio](assets/audio/spectral_features.png)
 
 ---
 
 ### 🖼️ Jeu de Données Image
 Contient des attributs faciaux avec des scores de confiance.
 
-![Dataset Image](assets/image/image_dataset_sample.png)
+![Dataset Image](assets/image/annotation_examples.png)
 
 ---
 
