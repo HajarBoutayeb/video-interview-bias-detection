@@ -16,8 +16,8 @@ Ce projet propose un **système multimodal basé sur l’intelligence artificiel
 - 🖼️ **Image / Vidéo** (attributs faciaux et indices visuels)
 
 L’objectif est d’**évaluer l’équité**, d’identifier les biais et de comparer l’efficacité de chaque modalité.
-
 Ce projet contribue à rendre le recrutement plus inclusif et éthique en utilisant l'IA pour auditer les algorithmes d'entretien.
+
 ---
 
 ## 🏗️ Architecture du Système
