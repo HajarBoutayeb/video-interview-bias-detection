@@ -1,97 +1,161 @@
-# Automatic Bias Detection in Video Interviews Using AI and Linguistic Analysis  
-### Final Year Project – Master Big Data & Data Science  
-**Université Hassan II – FS Ben M’Sik (2024–2025)**
+# 🎥 Détection Automatique des Biais dans les Entretiens Vidéo par IA  
+### Projet de Fin d’Études – Master Big Data & Data Science  
+**Université Hassan II – FS Ben M’Sik | 2024–2025**
 
 ---
 
-## 📌 Overview
-Automated video interview evaluation systems are increasingly adopted in recruitment processes.  
-However, these systems may unintentionally reproduce or amplify discriminatory biases.  
-This project proposes a multimodal system that analyzes **text**, **audio**, and **images** to detect potential bias.
+## 📌 Présentation du Projet
+
+Les systèmes automatisés d’évaluation des entretiens vidéo sont de plus en plus utilisés dans les processus de recrutement.  
+Cependant, ces systèmes peuvent involontairement introduire ou amplifier des **biais algorithmiques** liés au genre, à la race ou au langage.
+
+Ce projet propose un **système multimodal basé sur l’intelligence artificielle** pour détecter les biais potentiels dans les entretiens vidéo, à travers l’analyse conjointe de :
+
+- 📝 **Texte** (transcription et analyse linguistique)  
+- 🔊 **Audio** (caractéristiques prosodiques et spectrales)  
+- 🖼️ **Image / Vidéo** (attributs faciaux et indices visuels)
+
+L’objectif est d’**évaluer l’équité**, d’identifier les biais et de comparer l’efficacité de chaque modalité.
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ Architecture du Système
 
-Below are the three major pipelines used in this project, with visual diagrams.
+Le système est composé de trois pipelines de traitement indépendants.
 
-### 🔹 **1. Text Pipeline**
-![Text Pipeline](assets/text_pipeline.png)
-*Example: Transcription → Cleaning → Bias Detection → Vectorization → Classification*
+### 🔹 1. Pipeline de Traitement du Texte
+Ce pipeline vise à détecter les **biais linguistiques** à partir des transcriptions des entretiens.
 
-### 🔹 **2. Audio Pipeline**
-![Audio Pipeline](assets/audio_pipeline.png)
-*Example: Segmentation → Prosodic Features → MFCC → Spectral Analysis → Classification*
+**Étapes principales :**
+- Transcription audio → texte  
+- Nettoyage et normalisation du texte  
+- Extraction de caractéristiques liées aux biais  
+- Vectorisation (TF-IDF / embeddings)  
+- Classification  
 
-### 🔹 **3. Image/Video Pipeline**
-![Image Pipeline](assets/image_pipeline.png)
-*Example: Frame Extraction → Face Detection → Demographic Estimation → Emotion Analysis → Classification*
-
----
-
-## 📊 Results Summary
-
-Below are screenshots of model evaluation results for each modality.
-
-### 🔹 **Text Results**
-![Text Results](assets/text_results.png)
-
-### 🔹 **Audio Results**
-![Audio Results](assets/audio_results.png)
-
-### 🔹 **Image Results**
-![Image Results](assets/image_results.png)
+![Pipeline Texte](assets/text/text_pipeline.png)
 
 ---
 
-## 📂 Dataset Samples (Screenshots)
+### 🔹 2. Pipeline de Traitement Audio
+Le pipeline audio permet de capturer des **indices prosodiques et acoustiques** pouvant révéler des biais implicites.
 
-Screenshots showing examples from the dataset used for processing and annotation.
+**Caractéristiques extraites :**
+- Pitch, énergie, pauses  
+- Coefficients MFCC  
+- Caractéristiques spectrales  
 
-### 📝 **Text Dataset Example**
-![Text Dataset](assets/text_dataset.png)
-*Contains: Phrases, type of bias, severity, cleaned text, linguistic features.*
-
-### 🔊 **Audio Dataset Example**
-![Audio Dataset](assets/audio_dataset.png)
-*Contains: Pitch, MFCC, energy, pauses, jitter, prosodic statistics per chunk.*
-
-### 🖼️ **Image Dataset Example**
-![Image Dataset](assets/image_dataset.png)
-*Contains: Age, gender, race, emotions, confidence scores, face bounding boxes.*
+![Pipeline Audio](assets/audio/audio_pipeline.png)
 
 ---
 
-## 🎯 Objectives
-- Detect and quantify bias in video interview systems  
-- Build multimodal pipelines  
-- Extract meaningful features  
-- Evaluate fairness metrics  
-- Identify the most relevant modality  
+### 🔹 3. Pipeline Image / Vidéo
+Ce pipeline analyse les aspects visuels susceptibles d’introduire des biais démographiques.
+
+**Étapes principales :**
+- Extraction des frames  
+- Détection des visages  
+- Estimation démographique (âge, genre, race)  
+- Analyse des émotions  
+
+![Pipeline Image](assets/image/image_pipeline.png)
 
 ---
 
-## 🧪 Technologies
-Python, Whisper, Transformers, Librosa, OpenCV, MTCNN, DeepFace, Scikit-learn…
+## 📊 Résultats Expérimentaux
+
+### 🔹 Résultats – Modalité Texte
+Les modèles basés sur le texte obtiennent les **meilleures performances**, montrant l’importance du langage dans la détection des biais.
+
+![Résultats Texte](assets/text/text_results.png)
 
 ---
 
-## 🏁 Results Overview
-- Text modality achieves **best performance**  
-- Audio modality detects subtle prosodic cues  
-- Image modality identifies visual demographic bias  
-- Fairness metrics illustrate disparities between groups  
+### 🔹 Résultats – Modalité Audio
+L’analyse audio permet de détecter des variations prosodiques subtiles associées à des biais implicites.
+
+![Résultats Audio](assets/audio/audio_results.png)
 
 ---
 
-## 🚀 Future Work
-- Fusion multimodale  
-- Real dataset from HR companies  
-- Adversarial debiasing  
-- HR fairness dashboard  
+### 🔹 Résultats – Modalité Image / Vidéo
+Les caractéristiques visuelles mettent en évidence des **disparités démographiques** entre différents groupes.
+
+![Résultats Image](assets/image/image_results.png)
 
 ---
 
-## 👩‍💻 Author
-**Hajar Boutayeb**
+## 📂 Exemples de Données Utilisées
 
+### 📝 Jeu de Données Texte
+Contient des phrases d’entretiens annotées selon le type de biais, le niveau de sévérité et des caractéristiques linguistiques.
+
+![Dataset Texte](assets/text/text_dataset_sample.png)
+
+---
+
+### 🔊 Jeu de Données Audio
+Inclut des caractéristiques acoustiques extraites pour chaque segment audio.
+
+![Dataset Audio](assets/audio/audio_dataset_sample.png)
+
+---
+
+### 🖼️ Jeu de Données Image
+Contient des attributs faciaux avec des scores de confiance.
+
+![Dataset Image](assets/image/image_dataset_sample.png)
+
+---
+
+## 🎯 Objectifs du Projet
+
+- Détecter et quantifier les biais dans les systèmes d’entretien automatisés  
+- Concevoir des pipelines multimodaux indépendants  
+- Extraire des caractéristiques pertinentes (linguistiques, audio, visuelles)  
+- Évaluer l’équité entre différents groupes démographiques  
+- Comparer l’impact de chaque modalité  
+
+---
+
+## 🧪 Technologies Utilisées
+
+**Base :**  
+- Python, Scikit-learn  
+
+**Traitement du Langage Naturel (NLP) :**  
+- Whisper, HuggingFace Transformers  
+
+**Traitement Audio :**  
+- Librosa  
+
+**Vision par Ordinateur :**  
+- OpenCV, MTCNN, DeepFace  
+
+---
+
+## 🏁 Principaux Résultats
+
+- 🥇 La modalité texte offre les meilleures performances globales  
+- 🔊 L’audio permet de capter des indices de biais implicites  
+- 🖼️ L’analyse visuelle révèle des déséquilibres démographiques  
+- ⚖️ Les métriques d’équité montrent des disparités entre groupes  
+
+---
+
+## 🚀 Travaux Futurs
+
+- Fusion multimodale des trois pipelines  
+- Utilisation de jeux de données réels issus des RH  
+- Techniques d’adversarial debiasing  
+- Tableau de bord interactif pour l’évaluation de l’équité  
+
+---
+
+## 👩‍💻 Auteure
+
+**Hajar Boutayeb**  
+📧 Email : hajarboutayeb3@gmail.com  
+🔗 LinkedIn : https://www.linkedin.com/in/hajar-boutayeb-25bb90303/
+
+---
