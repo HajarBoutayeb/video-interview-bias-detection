@@ -1,0 +1,28 @@
+{
+  "transcript_folder": "C:/path/to/your/transcripts",
+  "openai_api_key": "your-openai-key-here",
+  "output_folder": "C:/path/to/output",
+  "analysis_methods": {
+    "pattern_based": true,
+    "bert_analysis": true,
+    "emotion_analysis": true,
+    "spacy_nlp": true,
+    "openai_gpt": false
+  },
+  "confidence_threshold": 0.7,
+  "languages": [
+    "en"
+  ],
+  "bias_categories": {
+    "gender": true,
+    "race_ethnicity": true,
+    "age": true,
+    "religion": true,
+    "disability": true,
+    "education": true,
+    "socioeconomic": true,
+    "appearance": true,
+    "language": true,
+    "cultural": true
+  }
+}

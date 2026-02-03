@@ -1,0 +1,47 @@
+{
+  "video1": {
+    "clip": "video1_clip_008",
+    "image": "frame_013_face03.jpg",
+    "timestamp": 1757496171.204027
+  },
+  "video2": {
+    "clip": "video2_clip_026",
+    "image": "frame_012_face02.jpg",
+    "timestamp": 1757496796.3158193
+  },
+  "video3": {
+    "clip": "video3_clip_006",
+    "image": "frame_010_face01.jpg",
+    "timestamp": 1757496871.229131
+  },
+  "video4": {
+    "clip": "video4_clip_019",
+    "image": "frame_011_face01.jpg",
+    "timestamp": 1757497245.6111636
+  },
+  "video5": {
+    "clip": "video5_clip_016",
+    "image": "frame_009_face02.jpg",
+    "timestamp": 1757497709.5608504
+  },
+  "video6": {
+    "clip": "video6_clip_002",
+    "image": "frame_012_face01.jpg",
+    "timestamp": 1757497757.7960796
+  },
+  "video7": {
+    "clip": "video7_clip_010",
+    "image": "frame_012_face03.jpg",
+    "timestamp": 1757497997.0884466
+  },
+  "video8": {
+    "clip": "video8_clip_012",
+    "image": "frame_004_face02.jpg",
+    "timestamp": 1757498262.2050297
+  },
+  "video9": {
+    "clip": "video9_clip_009",
+    "image": "frame_014_face03.jpg",
+    "timestamp": 1757498495.0886054
+  }
+}

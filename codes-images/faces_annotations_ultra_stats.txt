@@ -1,0 +1,7 @@
+Rapport d'analyse des visages
+==================
+
+Total images: 2142
+Visages détectés: 2143
+Taux de réussite: 100.0%
+Temps total: 47.3 minutes
