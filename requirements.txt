@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+librosa
+opencv-python
+mediapipe
+deepface
+transformers
+openai-whisper

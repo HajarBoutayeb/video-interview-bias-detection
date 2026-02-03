@@ -15,8 +15,7 @@ Ce projet propose un **système multimodal basé sur l’intelligence artificiel
 - 🔊 **Audio** (caractéristiques prosodiques et spectrales)  
 - 🖼️ **Image / Vidéo** (attributs faciaux et indices visuels)
 
-L’objectif est d’**évaluer l’équité**, d’identifier les biais et de comparer l’efficacité de chaque modalité.
-Ce projet contribue à rendre le recrutement plus inclusif et éthique en utilisant l'IA pour auditer les algorithmes d'entretien.
+L’objectif est d’**évaluer l’équité**, d’identifier les biais et de comparer l’efficacité de chaque modalité, afin de contribuer à un recrutement plus équitable et éthique.
 
 ---
 
@@ -80,7 +79,7 @@ L’analyse audio permet de détecter des variations prosodiques subtiles associ
 ---
 
 ### 🔹 Résultats – Modalité Image / Vidéo
-Les caractéristiques visuelles mettent en évidence des **disparités démographiques** entre différents groupes.
+Les caractéristiques visuelles mettent en évidence des **disparités démographiques** selon le genre et la race.
 
 ![Résultats Image](assets/image/image_results_genre.png)
 ![Résultats Image](assets/image/image_results_race.png)
@@ -96,7 +95,7 @@ Contient des phrases d’entretiens annotées selon le type de biais, le niveau 
 ---
 
 ### 🔊 Jeu de Données Audio
-Inclut des caractéristiques acoustiques extraites pour chaque segment audio.
+Inclut des caractéristiques acoustiques telles que les MFCC et des paramètres spectraux extraits pour chaque segment audio.
 
 ![Dataset Audio](assets/audio/spectral_features.png)
 
@@ -121,8 +120,11 @@ Contient des attributs faciaux avec des scores de confiance.
 
 ## ⚙️ Installation
 
-1. Clone the repository: `git clone https://github.com/HajarBoutayeb/video-interview-bias-detection.git`
-2. Install dependencies: `pip install -r requirements.txt`
+1. Cloner le dépôt :  
+   `git clone https://github.com/HajarBoutayeb/video-interview-bias-detection.git`
+
+2. Installer les dépendances :  
+   `pip install -r requirements.txt`
 
 ## 🏁 Principaux Résultats
 
